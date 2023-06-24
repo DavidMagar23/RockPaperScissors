@@ -3,3 +3,57 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Helvetica, sans-serif;
+
+    background: linear-gradient(lavenderblush, lavender);
+
+    height: 100vh;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    width: 80vw;
+    height: 80vh;
+
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+ /* Adjust margin due different img width and size */
+img {
+    width: 200px;
+}
+
+#paper {
+    width: 160px;
+    height: 140px;
+}
+
+#scissors {
+    margin-top: -30px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
