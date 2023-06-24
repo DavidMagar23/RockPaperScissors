@@ -13,10 +13,11 @@ body {
 
 }
 
+/* Center class for centering multiple elements easily   */
 .center {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .container {
@@ -26,9 +27,15 @@ body {
     background-color: white;
 }
 
-h1 {
+h1, h2 {
+    margin: 20px 0;
     text-align: center;
 }
+
+h2 {
+    margin-top: 0;
+}
+
 
 input {
     width: 0;
@@ -39,6 +46,13 @@ input {
  /* Adjust margin due different img width and size */
 img {
     width: 200px;
+
+    /* Make images not draggable (from stackoverflow) */
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 #paper {
