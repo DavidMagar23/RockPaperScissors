@@ -5,6 +5,8 @@ let body = document.querySelector('#body');
     scissors = document.getElementById('scissors-choice'),
     playerScoreText = document.getElementById('player-score-text'),
     computerScoreText = document.getElementById('computer-score-text'),
+    playerPlayText = document.getElementById('player-play-text'),
+    computerPlayText = document.getElementById('computer-play-text'),
     gameText = document.getElementById('game-text'),
     music = document.getElementById('music'),
     winMusic = document.getElementById('win-music'),
@@ -78,6 +80,7 @@ function play() {
     }
     resetImages2();
     getComputerChoice();
+    showPlayed ();
     compareChoices();
     showScore();
     resetScore();
@@ -115,6 +118,12 @@ function getComputerChoice () {
     else {
         computerChoice = 'scissors'
     }
+}
+
+// Show what was played
+function showPlayed () {
+    playerPlayText.innerText = `Player played ${playerChoice.toUpperCase()}`;
+    computerPlayText.innerText = `Computer played ${computerChoice.toUpperCase()}`;
 }
 
 // Compare the choices 
@@ -223,6 +232,9 @@ function resetTotalScore() {
         computerScoreText.innerText = 'Computer score: 0';
         playerScoreText.innerText = 'Player score: 0';
         gameText.innerText = "Waiting again . . .";
+
+        playerPlayText.innerText = `Waiting . . .`;
+        computerPlayText.innerText = `Waiting . . .`;
         gameCount = 0;
         resetImages();
         return true;
