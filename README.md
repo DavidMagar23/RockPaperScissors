@@ -4,6 +4,8 @@
 
 # Live at : 
 
+
+# Psuedocode ()
 # Hear for player Choice
 # Hear for computer Choice
 # Evaluate and compare
